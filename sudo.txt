@@ -1,0 +1,45 @@
+clear;
+clc;
+brick setup;
+variable init;
+
+while(1)
+{
+	display "color_sorter,group,etc...
+			... press center_button to start.";
+	
+	if(center_button_pressed)
+	{
+		while(left_button_is_NOT_pressed)
+		{
+			test_all();
+			display "press up button for auto sort and...
+					 ... press down button for manual sort.";
+			
+			if(up_button)
+			{
+				auto_sort();
+			}
+			else if(down_button)
+			{
+				manual_sort();
+			}					 
+		}		
+	}		
+}
+
+auto_sort()
+{
+	while(!left)
+	{
+		....
+	}
+}
+
+manual_sort()
+{
+	while(!left)
+	{
+		....
+	}
+}
